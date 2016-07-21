@@ -28,7 +28,7 @@ First example : Animate all visible views from rootView.
 ```java
 Views.from(rootView)
      .withVisibility(View.VISIBLE)
-     .animateWith(this, R.anim.my_awesome_animation)
+     .animateWith(context, R.anim.my_awesome_animation)
      .start();
 ```
 
@@ -74,7 +74,7 @@ Views.from(groupView1 /*, groupView2, ...*/)
      .withTag("xyz")
 
      // And animate them all !
-     .animateWith(this, R.anim.my_awesome_animation)
+     .animateWith(context, R.anim.my_awesome_animation)
      .withDelayBetweenEachChild(250)
      .withViewsVisibilityBeforeAnimation(View.INVISIBLE)
      .withEndAction(() -> {
@@ -108,7 +108,7 @@ Views.from(groupView)
        return /* your animation instance */;
      })
      // or
-     // .animateWith(this, R.anim.my_awesome_animation)
+     // .animateWith(context, R.anim.my_awesome_animation)
      .withDelayBetweenEachChild(250)
      .withViewsVisibilityBeforeAnimation(View.INVISIBLE)
      .withEndAction(() -> {})
@@ -130,7 +130,7 @@ ViewsAnimator's **start()** method can be called multiple times if you want.
 ```java
 // First call.
 ViewsAnimator viewsAnimator = Views.from(groupView)
-     .animateWith(this, R.anim.my_awesome_animation)
+     .animateWith(context, R.anim.my_awesome_animation)
      .start();
 
 // Second call.
