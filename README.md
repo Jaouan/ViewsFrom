@@ -72,6 +72,11 @@ Views.from(groupView1 /*, groupView2, ...*/)
      // Concate with a new views finder, with its own filters and options.
      .andFrom(group2)
      .withTag("xyz")
+     
+     // Order views.
+     .orderedBy((view1, view2) -> {
+       return /* your own comparator */;
+     }
 
      // And animate them all !
      .animateWith(context, R.anim.my_awesome_animation)
