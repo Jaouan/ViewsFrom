@@ -1,5 +1,6 @@
 Android ViewsFrom
 ========
+[![Release](https://jitpack.io/v/Jaouan/ViewsFrom.svg)](https://jitpack.io/#Jaouan/ViewsFrom) [![API](https://img.shields.io/badge/API-14%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=14)
 
 ViewFrom is an android librarie that allows you to easily find and animate child views from one or multiple ViewGroups using their tag, type, visibility and much more.
 This librairie is Android 14+ compatible.
