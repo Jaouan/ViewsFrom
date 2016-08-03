@@ -18,7 +18,7 @@ repositories {
 ```
 
 ```java
-compile 'com.github.jaouan:viewsfrom:0.0.1'
+compile 'com.github.jaouan:viewsfrom:1.0.0'
 ```
 
 Usage
